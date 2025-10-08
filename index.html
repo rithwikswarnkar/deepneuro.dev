@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeepNeuro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="logo">DeepNeuro</div>
+        <nav class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+            <a href="blog.html">Blog</a>
+        </nav>
+        <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>AI & Machine Learning for Life Sciences</h1>
+        <p>Exploring neural networks, biomedical data, and the future of intelligent healthcare.</p>
+        <div class="hero-links">
+            <a href="mailto:swarnkar.rithwik@gmail.com" target="_blank">Email</a>
+            <a href="https://www.linkedin.com/in/rithwik-swarnkar/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/rithwikswarnkar" target="_blank">GitHub</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 DeepNeuro | Built with ❤️ by Rithwik Swarnkar</p>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menu = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+        menu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

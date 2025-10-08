@@ -1,0 +1,268 @@
+/* ==========================
+   Reset & Global Styles
+========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #fbfbfb;
+  background-color: #212121;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* ==========================
+   Navigation Bar
+========================== */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(33, 33, 33, 0.95);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #fbfbfb;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+.nav-links a {
+  color: #fbfbfb;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #b0bec5;
+}
+
+/* Hamburger menu icon */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #fbfbfb;
+}
+
+/* ==========================
+   Hero Section
+========================== */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 20px 60px;
+  text-align: center;
+  background-color: #212121;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  max-width: 800px;
+  line-height: 1.2;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  max-width: 700px;
+  color: #e0e0e0;
+}
+
+.hero-links a {
+  color: #fbfbfb;
+  text-decoration: none;
+  border: 1px solid #fbfbfb;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin: 0 10px;
+  transition: all 0.3s ease;
+}
+
+.hero-links a:hover {
+  background-color: #fbfbfb;
+  color: #212121;
+}
+
+/* ==========================
+   General Sections
+========================== */
+main {
+  width: 100%;
+  margin-top: 100px;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto 80px auto;
+  padding: 80px 60px;
+  text-align: left;
+}
+
+section h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+section h3 {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+section p {
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* ==========================
+   Buttons & Links
+========================== */
+button, .btn {
+  background-color: #242424;
+  color: #fbfbfb;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+button:hover, .btn:hover {
+  background-color: #fbfbfb;
+  color: #242424;
+}
+
+/* ==========================
+   Project Cards
+========================== */
+.project-card {
+  background-color: #242424;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+}
+
+/* ==========================
+   Footer
+========================== */
+footer {
+  background-color: #242424;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #b0bec5;
+}
+
+/* ==========================
+   Responsive Design
+========================== */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(33, 33, 33, 0.95);
+    position: absolute;
+    top: 65px;
+    right: 0;
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  section {
+    padding: 40px 20px;
+    margin-bottom: 40px;
+  }
+
+  section h2 {
+    font-size: 28px;
+  }
+
+  section h3 {
+    font-size: 22px;
+  }
+}
+
+/* ==========================
+   Optional Smooth Fade Animations
+========================== */
+.hero, .navbar {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+.navbar {
+  animation-delay: 0.1s;
+}
+
+.hero {
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
