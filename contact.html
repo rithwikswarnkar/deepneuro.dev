@@ -7,25 +7,43 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
-    <a href="blog.html">Blog</a>
-  </nav>
-
-  <header>
-    <h1>Contact</h1>
-    <p>Get in touch</p>
+  <!-- Navigation Bar -->
+  <header class="navbar">
+      <div class="logo">DeepNeuro</div>
+      <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html" class="active">Contact</a>
+          <a href="blog.html">Blog</a>
+      </nav>
+      <div class="menu-toggle" id="mobile-menu">&#9776;</div>
   </header>
 
-  <main>
-    <section>
-            <p>LinkedIn: <a href="https://www.linkedin.com/company/deepneuro/" target="_blank">linkedin.com/in/rithwik-swarnkar/</a></p>
-      <p>GitHub: <a href="https://github.com/rithwikswarnkar" target="_blank">github.com/rithwikswarnkar</a></p>
-      <p>Medium: <a href="https://medium.com/@swarnkar.rithwik" target="_blank">medium.com/@swarnkar.rithwik</a></p>
-    </section>
-  </main>
+  <!-- Hero Section -->
+  <section class="hero">
+      <h1>Get in Touch</h1>
+      <p>Feel free to connect with me via email or on my professional networks.</p>
+      <div class="hero-links">
+          <a href="mailto:swarnkar.rithwik@gmail.com" target="_blank">Email</a>
+          <a href="https://www.linkedin.com/company/deepneuro/" target="_blank">LinkedIn</a>
+          <a href="https://github.com/rithwikswarnkar" target="_blank">GitHub</a>
+          <a href="https://medium.com/@swarnkar.rithwik" target="_blank">Medium</a>
+      </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+      <p>&copy; 2025 DeepNeuro | Built with ❤️ by Rithwik Swarnkar</p>
+  </footer>
+
+  <script>
+      // Mobile menu toggle
+      const menu = document.getElementById('mobile-menu');
+      const navLinks = document.querySelector('.nav-links');
+      menu.addEventListener('click', () => {
+          navLinks.classList.toggle('active');
+      });
+  </script>
 </body>
 </html>

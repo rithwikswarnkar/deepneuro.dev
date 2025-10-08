@@ -7,21 +7,31 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
-    <a href="blog.html">Blog</a>
-  </nav>
-
-  <header>
-    <h1>Projects</h1>
-    <p>AI and Machine Learning Projects</p>
+  <!-- Navigation Bar -->
+  <header class="navbar">
+      <div class="logo">DeepNeuro</div>
+      <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html" class="active">Projects</a>
+          <a href="contact.html">Contact</a>
+          <a href="blog.html">Blog</a>
+      </nav>
+      <div class="menu-toggle" id="mobile-menu">&#9776;</div>
   </header>
 
+  <!-- Hero Section -->
+  <section class="hero">
+      <h1>AI & Machine Learning Projects</h1>
+      <p>Showcasing healthcare AI, deep learning, and life sciences solutions.</p>
+      <div class="hero-links">
+          <a href="https://github.com/rithwikswarnkar" target="_blank">See More on GitHub</a>
+      </div>
+  </section>
+
+  <!-- Projects Section -->
   <main>
-    <section>
+    <section class="project">
       <h2>AI-Powered Brain MRI Classifier</h2>
       <p>Python, TensorFlow, Keras</p>
       <ul>
@@ -30,7 +40,7 @@
       </ul>
     </section>
 
-    <section>
+    <section class="project">
       <h2>Diabetes Risk Predictor</h2>
       <p>Python, scikit-learn, XGBoost, SMOTE</p>
       <ul>
@@ -39,7 +49,7 @@
       </ul>
     </section>
 
-    <section>
+    <section class="project">
       <h2>Enzyme Classification from Protein Sequences</h2>
       <p>Python, Biopython, scikit-learn</p>
       <ul>
@@ -48,14 +58,30 @@
       </ul>
     </section>
 
-    <section>
+    <section class="project">
       <h2>Additional Projects</h2>
       <ul>
         <li>Fake News Detection (NLP) – Logistic regression with TF-IDF; improved generalization.</li>
         <li>Student Performance Analysis – PCA and clustering (K-Means, DBSCAN) to uncover patterns.</li>
       </ul>
-      <p>See more projects on <a href="https://github.com/rithwikswarnkar" target="_blank">GitHub</a>.</p>
+      <div class="hero-links">
+          <a href="https://github.com/rithwikswarnkar" target="_blank">See More Projects on GitHub</a>
+      </div>
     </section>
   </main>
+
+  <!-- Footer -->
+  <footer>
+      <p>&copy; 2025 DeepNeuro | Built with ❤️ by Rithwik Swarnkar</p>
+  </footer>
+
+  <script>
+      // Mobile menu toggle
+      const menu = document.getElementById('mobile-menu');
+      const navLinks = document.querySelector('.nav-links');
+      menu.addEventListener('click', () => {
+          navLinks.classList.toggle('active');
+      });
+  </script>
 </body>
 </html>

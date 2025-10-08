@@ -7,21 +7,33 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
-    <a href="blog.html">Blog</a>
-  </nav>
-
-  <header>
-    <h1>About DeepNeuro</h1>
-    <p>AI & Machine Learning for Life Sciences</p>
+  <!-- Navigation Bar -->
+  <header class="navbar">
+      <div class="logo">DeepNeuro</div>
+      <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html" class="active">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+          <a href="blog.html">Blog</a>
+      </nav>
+      <div class="menu-toggle" id="mobile-menu">&#9776;</div>
   </header>
 
+  <!-- Hero Section -->
+  <section class="hero">
+      <h1>About DeepNeuro</h1>
+      <p>AI & Machine Learning for Life Sciences — building interpretable, scalable, and impactful AI solutions.</p>
+      <div class="hero-links">
+          <a href="mailto:swarnkar.rithwik@gmail.com" target="_blank">Email Me</a>
+          <a href="https://www.linkedin.com/in/rithwik-swarnkar/" target="_blank">LinkedIn</a>
+          <a href="https://github.com/rithwikswarnkar" target="_blank">GitHub</a>
+      </div>
+  </section>
+
+  <!-- About Content -->
   <main>
-    <section>
+    <section class="about-person">
       <h2>Rithwik Swarnkar</h2>
       <p>
         AI/ML Developer skilled in designing, developing, and deploying machine learning (ML), deep learning (DL), 
@@ -33,7 +45,7 @@
       </p>
     </section>
 
-    <section>
+    <section class="about-skills">
       <h2>Technical Skills</h2>
       <ul>
         <li>Python, R, SQL</li>
@@ -45,5 +57,19 @@
       </ul>
     </section>
   </main>
+
+  <!-- Footer -->
+  <footer>
+      <p>&copy; 2025 DeepNeuro | Built with ❤️ by Rithwik Swarnkar</p>
+  </footer>
+
+  <script>
+      // Mobile menu toggle
+      const menu = document.getElementById('mobile-menu');
+      const navLinks = document.querySelector('.nav-links');
+      menu.addEventListener('click', () => {
+          navLinks.classList.toggle('active');
+      });
+  </script>
 </body>
 </html>

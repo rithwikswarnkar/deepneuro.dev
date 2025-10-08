@@ -7,33 +7,41 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
-    <a href="blog.html">Blog</a>
-  </nav>
-
-  <header>
-    <h1>Blog & Articles</h1>
-    <p>Insights, AI research, and updates</p>
+  <!-- Navigation Bar -->
+  <header class="navbar">
+      <div class="logo">DeepNeuro</div>
+      <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+          <a href="blog.html" class="active">Blog</a>
+      </nav>
+      <div class="menu-toggle" id="mobile-menu">&#9776;</div>
   </header>
 
-  <main>
-    <section>
-      <h2>Medium Articles</h2>
-      <ul>
-        <li><a href="https://medium.com/@swarnkar.rithwik" target="_blank">Read on Medium</a></li>
-      </ul>
-    </section>
+  <!-- Hero Section -->
+  <section class="hero">
+      <h1>Blog & Articles</h1>
+      <p>Insights, AI research, and updates from the world of healthcare and machine learning.</p>
+      <div class="hero-links">
+          <a href="https://medium.com/@swarnkar.rithwik" target="_blank">Read on Medium</a>
+          <a href="https://www.linkedin.com/in/rithwik-swarnkar/recent-activity/articles/" target="_blank">Read on LinkedIn</a>
+      </div>
+  </section>
 
-    <section>
-      <h2>LinkedIn Articles</h2>
-      <ul>
-        <li><a href="https://www.linkedin.com/in/rithwik-swarnkar/" target="_blank">Read on LinkedIn</a></li>
-      </ul>
-    </section>
-  </main>
+  <!-- Footer -->
+  <footer>
+      <p>&copy; 2025 DeepNeuro | Built with ❤️ by Rithwik Swarnkar</p>
+  </footer>
+
+  <script>
+      // Mobile menu toggle
+      const menu = document.getElementById('mobile-menu');
+      const navLinks = document.querySelector('.nav-links');
+      menu.addEventListener('click', () => {
+          navLinks.classList.toggle('active');
+      });
+  </script>
 </body>
 </html>
