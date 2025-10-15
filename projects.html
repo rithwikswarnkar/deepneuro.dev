@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AI/ML projects by Rithwik Swarnkar - Healthcare AI, Computer Vision, NLP, and more">
+  <title>Projects | Rithwik Swarnkar - AI/ML Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header class="navbar">
+      <div class="logo">Rithwik Swarnkar</div>
+      <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html" class="active">Projects</a>
+          <a href="experience.html">Experience</a>
+          <a href="skills.html">Skills</a>
+          <a href="contact.html">Contact</a>
+          <a href="blog.html">Blog</a>
+      </nav>
+      <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" style="min-height: 60vh;">
+      <div class="hero-content">
+          <div class="hero-subtitle">PORTFOLIO</div>
+          <h1>AI/ML Projects</h1>
+          <p class="hero-description">
+              A showcase of production-ready machine learning solutions across healthcare, computer vision, 
+              NLP, and bioinformatics. Each project demonstrates end-to-end ML pipeline development, 
+              from data preprocessing to model deployment.
+          </p>
+          <div class="hero-social">
+              <a href="https://github.com/rithwikswarnkar" target="_blank" title="View All on GitHub">
+                  <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+              </a>
+          </div>
+      </div>
+  </section>
+
+  <!-- Projects Section -->
+  <main>
+    <!-- Featured Projects -->
+    <section class="content-section">
+      <div class="section-header">
+          <h2>Featured Projects</h2>
+          <p>Highlighted work demonstrating expertise in healthcare AI and deep learning</p>
+      </div>
+
+      <!-- Project 1: Emotion Analyzer API -->
+      <div class="project-grid" id="emotion-analyzer">
+        <div class="project-card">
+          <div class="card-image" style="background: linear-gradient(135deg, #F7C8D7 0%, #E0218A 100%); background-size: cover; background-position: center;">
+            <img src="assets/emotion-analyzer.png" alt="Emotion Analyzer" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;" onerror="this.style.display='none'">
+            <div class="card-badge" style="position: relative; z-index: 1;">Full-Stack AI</div>
+          </div>
+          <div class="card-content">
+            <div class="project-header">
+              <h3>Emotion Analyzer API – End-to-End AI Application</h3>
+              <div class="project-links">
+                <a href="https://github.com/rithwikswarnkar" target="_blank" title="GitHub">
+                  <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+                </a>
+              </div>
+            </div>
+            
+            <p><strong>Production-grade NLP microservice for real-time emotion classification with full-stack deployment</strong></p>
+            
+            <p>Built a complete AI application featuring a fine-tuned DistilRoBERTa Transformer for emotion classification, deployed as containerized microservices on Google Cloud Platform with automated CI/CD pipelines.</p>
+            
+            <h4 style="margin-top: 1.5rem; color: var(--primary-color); font-size: 1.1rem;">Key Features:</h4>
+            <ul>
+              <li>Fine-tuned DistilRoBERTa Transformer for emotion classification</li>
+              <li>FastAPI backend with async inference and performance caching</li>
+              <li>React + Vite frontend with Tailwind CSS for real-time visualization</li>
+              <li>Docker containerization with Cloud Run deployment</li>
+              <li>Automated CI/CD via Firebase CLI and Google Cloud Build</li>
+              <li>Environment-based CORS control and Pydantic validation</li>
+            </ul>
+            
+            <h4 style="margin-top: 1.5rem; color: var(--primary-color); font-size: 1.1rem;">Technical Highlights:</h4>
+            <ul>
+              <li>Low-latency, cloud-native AI product showcasing full-stack ML and MLOps</li>
+              <li>Production-ready microservice architecture with scalable inference</li>
+              <li>Integrated frontend-backend communication with real-time emotion outputs</li>
+              <li>Complete DevOps pipeline from development to deployment</li>
+            </ul>
+            
+            <h4 style="margin-top: 1.5rem; color: var(--primary-color); font-size: 1.1rem;">Tech Stack:</h4>
+            <div class="card-tech">
+              <span>Python</span>
+              <span>FastAPI</span>
+              <span>PyTorch</span>
+              <span>Hugging Face</span>
+              <span>React</span>
+              <span>Docker</span>
+              <span>Google Cloud Run</span>
+              <span>Firebase Hosting</span>
+            </div>
+            
+            <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border-color);">
+              <strong>Impact:</strong> Delivered a production-ready AI product demonstrating end-to-end ML application development and deployment expertise.
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: AI-Powered Brain MRI Classifier -->
+        <div class="project-card" id="brain-mri">
+          <div class="card-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); background-size: cover; background-position: center;">
+            <img src="assets/brain-mri.png" alt="Brain MRI Classifier" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;" onerror="this.style.display='none'">
+            <div class="card-badge" style="position: relative; z-index: 1;">Medical AI</div>
+          </div>
+          <div class="card-content">
+            <div class="project-header">
+              <h3>AI-Powered Brain MRI Classifier</h3>
+              <div class="project-links">
+                <a href="https://github.com/rithwikswarnkar" target="_blank" title="GitHub">
+                  <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+                </a>
+              </div>
+            </div>
+            
+            <p><strong>Deep learning model for automated tumor classification in medical imaging</strong></p>
+            
+            <p>Developed a convolutional neural network (CNN) model using TensorFlow and Keras for brain tumor classification in MRI scans, featuring data augmentation and Grad-CAM visualizations for medical interpretability.</p>
+            
+            <h4 style="margin-top: 1.5rem; color: var(--primary-color); font-size: 1.1rem;">Key Features:</h4>
+            <ul>
+              <li>CNN architecture trained on brain MRI scans for tumor classification</li>
+              <li>Data augmentation techniques for handling limited medical imaging datasets</li>
+              <li>Grad-CAM visualizations for model interpretability in clinical settings</li>
+              <li>Transfer learning implementation for improved performance</li>
+              <li>Medical imaging preprocessing pipeline for DICOM format</li>
+            </ul>
+            
+            <h4 style="margin-top: 1.5rem; color: var(--primary-color); font-size: 1.1rem;">Technical Highlights:</h4>
+            <ul>
+              <li>Implemented custom data preprocessing for medical imaging data</li>
+              <li>Applied regularization techniques to prevent overfitting</li>
+              <li>Generated attention maps for clinical decision support</li>
+              <li>Demonstrated potential for reducing diagnostic time in clinical workflows</li>
+            </ul>
+            
+            <h4 style="margin-top: 1.5rem; color: var(--primary-color); font-size: 1.1rem;">Tech Stack:</h4>
+            <div class="card-tech">
+              <span>Python</span>
+              <span>TensorFlow</span>
+              <span>Keras</span>
+              <span>NumPy</span>
+              <span>Matplotlib</span>
+              <span>Medical Imaging</span>
+              <span>Deep Learning</span>
+              <span>CNN</span>
+            </div>
+            
+            <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border-color);">
+              <strong>Impact:</strong> Showcases expertise in medical AI applications with focus on interpretable deep learning for healthcare.
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Enzyme Classification -->
+        <div class="project-card" id="enzyme">
+          <div class="card-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); background-size: cover; background-position: center;">
+            <img src="assets/enzyme-classification.png" alt="Enzyme Classification" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;" onerror="this.style.display='none'">
+            <div class="card-badge" style="position: relative; z-index: 1;">Bioinformatics</div>
+          </div>
+          <div class="card-content">
+            <div class="project-header">
+              <h3>Enzyme Classification from Protein Sequences</h3>
+              <div class="project-links">
+                <a href="https://github.com/rithwikswarnkar/week-2-enzyme-classifier" target="_blank" title="GitHub">
+                  <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+                </a>
+              </div>
+            </div>
+            
+            <p><strong>Sequence-based classifier distinguishing enzymes from non-enzymes with high accuracy</strong></p>
+            
+            <p>Developed a bioinformatics machine learning pipeline using amino acid compositions and Biopython for protein sequence analysis, achieving 91% accuracy and 0.96 ROC-AUC score in enzyme classification.</p>
+            
+            <h4 style="margin-top: 1.5rem; color: var(--primary-color); font-size: 1.1rem;">Key Features:</h4>
+            <ul>
+              <li>91% classification accuracy with 0.96 ROC-AUC score</li>
+              <li>Sequence-based classifier using amino acid compositions</li>
+              <li>Biopython integration for protein sequence analysis</li>
+              <li>Feature engineering from biological sequence properties</li>
+              <li>Robust validation across different protein datasets</li>
+            </ul>
+            
+            <h4 style="margin-top: 1.5rem; color: var(--primary-color); font-size: 1.1rem;">Technical Highlights:</h4>
+            <ul>
+              <li>Advanced feature extraction from protein sequences</li>
+              <li>Machine learning pipeline for biological data processing</li>
+              <li>High-performance classification with excellent generalization</li>
+              <li>Demonstrates expertise in computational biology applications</li>
+            </ul>
+            
+            <h4 style="margin-top: 1.5rem; color: var(--primary-color); font-size: 1.1rem;">Tech Stack:</h4>
+            <div class="card-tech">
+              <span>Python</span>
+              <span>Biopython</span>
+              <span>scikit-learn</span>
+              <span>Machine Learning</span>
+              <span>Bioinformatics</span>
+              <span>Protein Analysis</span>
+              <span>Sequence Data</span>
+              <span>Classification</span>
+            </div>
+            
+            <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border-color);">
+              <strong>Impact:</strong> Demonstrates strong expertise in bioinformatics and computational biology, with practical applications in protein functional annotation.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Additional Projects -->
+    <section class="content-section" style="background-color: var(--bg-secondary);">
+      <div class="section-header">
+          <h2>Additional Projects</h2>
+          <p>More AI/ML solutions across various domains</p>
+      </div>
+
+      <div class="project-grid">
+        <!-- Fake News Detection -->
+        <div class="project-card">
+          <div class="card-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); background-size: cover; background-position: center;">
+            <img src="assets/fake-news.png" alt="Fake News Detection" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;" onerror="this.style.display='none'">
+            <div class="card-badge" style="position: relative; z-index: 1;">NLP</div>
+          </div>
+          <div class="card-content">
+            <div class="project-header">
+              <h3>Fake News Detection</h3>
+              <div class="project-links">
+                <a href="https://github.com/rithwikswarnkar" target="_blank" title="GitHub">
+                  <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+                </a>
+              </div>
+            </div>
+            <p>Natural Language Processing classifier to detect fake news using TF-IDF vectorization and Logistic Regression, with data leakage prevention techniques for improved model generalization.</p>
+            <h4 style="margin-top: 1rem; color: var(--primary-color); font-size: 1.1rem;">Key Technologies:</h4>
+            <div class="card-tech">
+              <span>Python</span>
+              <span>NLP</span>
+              <span>TF-IDF</span>
+              <span>Logistic Regression</span>
+              <span>Data Preprocessing</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Student Performance Analysis -->
+        <div class="project-card">
+          <div class="card-image" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%); background-size: cover; background-position: center;">
+            <img src="assets/student-performance.png" alt="Student Performance Analysis" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;" onerror="this.style.display='none'">
+            <div class="card-badge" style="position: relative; z-index: 1;">Data Science</div>
+          </div>
+          <div class="card-content">
+            <div class="project-header">
+              <h3>Student Performance Analysis</h3>
+              <div class="project-links">
+                <a href="https://medium.com/@swarnkar.rithwik/from-student-personas-to-predictive-models-my-journey-with-clustering-dimensionality-reduction-561ece60bf6f" target="_blank" title="Medium Article">
+                  <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg>
+                </a>
+              </div>
+            </div>
+            <p>Utilized clustering and dimensionality reduction techniques (PCA, K-Means, DBSCAN) to predict student performance and identify struggling students early for timely intervention.</p>
+            <h4 style="margin-top: 1rem; color: var(--primary-color); font-size: 1.1rem;">Key Technologies:</h4>
+            <div class="card-tech">
+              <span>Python</span>
+              <span>PCA</span>
+              <span>K-Means</span>
+              <span>DBSCAN</span>
+              <span>Clustering</span>
+              <span>Dimensionality Reduction</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Diabetes Risk Predictor -->
+        <div class="project-card">
+          <div class="card-image" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); background-size: cover; background-position: center;">
+            <img src="assets/diabetes-predictor.png" alt="Diabetes Risk Predictor" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;" onerror="this.style.display='none'">
+            <div class="card-badge" style="position: relative; z-index: 1;">Healthcare ML</div>
+          </div>
+          <div class="card-content">
+            <div class="project-header">
+              <h3>Diabetes Risk Predictor</h3>
+              <div class="project-links">
+                <a href="https://github.com/rithwikswarnkar" target="_blank" title="GitHub">
+                  <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+                </a>
+              </div>
+            </div>
+            <p>End-to-end ML pipeline for diabetes risk prediction with class balancing techniques and hyperparameter tuning, transforming biomarkers into risk scores for early disease diagnosis.</p>
+            <h4 style="margin-top: 1rem; color: var(--primary-color); font-size: 1.1rem;">Key Technologies:</h4>
+            <div class="card-tech">
+              <span>Python</span>
+              <span>Machine Learning</span>
+              <span>Healthcare AI</span>
+              <span>Disease Prediction</span>
+              <span>Biomarkers</span>
+              <span>Risk Assessment</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-cta" style="margin-top: 4rem;">
+        <p style="color: var(--text-secondary); margin-bottom: 2rem; font-size: 1.1rem;">
+          Interested in more projects? Check out my GitHub for additional work and contributions.
+        </p>
+        <a href="https://github.com/rithwikswarnkar" class="btn-primary" target="_blank">View All on GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>Rithwik Swarnkar</h4>
+            <p>AI/ML Developer & Healthcare AI Specialist</p>
+        </div>
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-section">
+            <h4>Connect</h4>
+            <a href="https://github.com/rithwikswarnkar" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/rithwik-swarnkar/" target="_blank">LinkedIn</a>
+            <a href="https://medium.com/@swarnkar.rithwik" target="_blank">Medium</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Rithwik Swarnkar. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+      // Mobile menu toggle
+      const menu = document.getElementById('mobile-menu');
+      const navLinks = document.querySelector('.nav-links');
+      menu.addEventListener('click', () => {
+          navLinks.classList.toggle('active');
+      });
+
+      // Animate project cards on scroll
+      const observerOptions = {
+          threshold: 0.1,
+          rootMargin: '0px 0px -50px 0px'
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                  entry.target.style.opacity = '1';
+                  entry.target.style.transform = 'translateY(0)';
+              }
+          });
+      }, observerOptions);
+
+      document.querySelectorAll('.project-card').forEach(el => {
+          observer.observe(el);
+      });
+  </script>
+</body>
+</html>
