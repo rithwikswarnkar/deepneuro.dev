@@ -182,7 +182,7 @@ Your website now **matches or exceeds** the Eric Wadkins example in these ways:
 ### Immediate Actions:
 1. **Add Your Resume**
    ```bash
-   cp /path/to/your/resume.pdf assets/resume.pdf
+   cp "/path/to/your/resume.pdf" "assets/Rithwik Swarnkar Resume.pdf"
    ```
 
 2. **Update Personal Information**

@@ -12,7 +12,7 @@
 
 ```bash
 # 1. Add your resume
-cp /path/to/your/resume.pdf assets/resume.pdf
+cp "/path/to/your/resume.pdf" "assets/Rithwik Swarnkar Resume.pdf"
 
 # 2. Update personal information in HTML files
 # Edit index.html, about.html, projects.html, etc.
@@ -45,7 +45,7 @@ deepneuro.dev/
 ├── blog.html          # Blog links & writing
 ├── style.css          # All styling (dark theme)
 ├── assets/            # Resume and images
-│   ├── resume.pdf     # YOUR RESUME (add this!)
+│   ├── Rithwik Swarnkar Resume.pdf  # YOUR RESUME (add this!)
 │   └── README.md      # Assets documentation
 ├── CNAME              # Custom domain configuration
 ├── README.md          # This file
@@ -151,7 +151,7 @@ Edit `skills.html`:
 
 ## 📋 To-Do List
 
-- [ ] Add your resume PDF to `assets/resume.pdf`
+- [ ] Add your resume PDF to `assets/Rithwik Swarnkar Resume.pdf`
 - [ ] Update all personal information
 - [ ] Replace placeholder work experience
 - [ ] Add actual project links to GitHub

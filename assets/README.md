@@ -5,7 +5,7 @@ This folder contains static assets for your personal website.
 ## Required Files
 
 ### Resume
-- ✅ **File**: `resume.pdf` (Already added)
+- ✅ **File**: `Rithwik Swarnkar Resume.pdf` (Already added)
 - **Description**: Your latest resume/CV in PDF format
 - **Used in**: All pages (download button)
 

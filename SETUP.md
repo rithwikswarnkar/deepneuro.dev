@@ -29,7 +29,7 @@ This is your professional AI/ML portfolio website built with HTML, CSS, and Java
 ### 1. Add Your Resume
 ```bash
 # Place your resume PDF in the assets folder
-cp /path/to/your/resume.pdf assets/resume.pdf
+cp "/path/to/your/resume.pdf" "assets/Rithwik Swarnkar Resume.pdf"
 ```
 
 ### 2. Update Content
@@ -221,9 +221,9 @@ This website works on:
 ## 🐛 Troubleshooting
 
 ### Resume Download Not Working
-- Ensure `resume.pdf` exists in the `assets/` folder
+- Ensure `Rithwik Swarnkar Resume.pdf` exists in the `assets/` folder
 - Check file permissions
-- Verify the path in HTML: `href="assets/resume.pdf"`
+- Verify the path in HTML: `href="assets/Rithwik%20Swarnkar%20Resume.pdf"`
 
 ### Animations Not Working
 - Check if JavaScript is enabled
