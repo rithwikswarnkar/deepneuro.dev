@@ -1,6 +1,6 @@
-# Rithwik Swarnkar - Professional AI/ML Portfolio
+# DeepNeuro.dev — Applied AI Systems by Rithwik Swarnkar
 
-> A modern, professional portfolio website showcasing AI/ML expertise, healthcare AI projects, and technical skills.
+> A modern portfolio and research hub focused on applied AI and agentic systems: multi-agent workflows, RAG knowledge platforms, and production-grade deployments. Originated in healthcare AI; expanded to cross-domain GenAI and ML engineering.
 
 🌐 **Live Site:** [deepneuro.dev](https://deepneuro.dev)  
 💼 **LinkedIn:** [linkedin.com/in/rithwik-swarnkar](https://www.linkedin.com/in/rithwik-swarnkar/)  

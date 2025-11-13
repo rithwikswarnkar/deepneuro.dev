@@ -329,4 +329,19 @@ You now have a **professional, comprehensive portfolio website** that will signi
 
 Good luck with your job search! 🚀
 
+---
+
+## 2025-11 Modernization (Agentic AI Alignment)
+
+Short changelog of updates aligning the site with applied AI/agentic systems while retaining healthcare roots:
+
+- Global: Unified footer title to “AI/ML Developer & Applied AI Systems Engineer”; refreshed meta titles/descriptions; updated JSON-LD on homepage.
+- Home (`index.html`): New hero (“Building Intelligent Agentic Systems for the Real World.”) and subtitle; updated intro copy; featured “Intelligent Sales Agent System” and “Emotion Analyzer API”; healthcare project kept as a legacy showcase.
+- About (`about.html`): Balanced biography; emphasized multi-agent, RAG, and cloud deployments (Google Cloud Run, Render, Vercel); retained neurobiology background.
+- Projects (`projects.html`): Added featured “Intelligent Sales Agent System”; kept Emotion Analyzer; moved “Enzyme Classification” to Additional Projects.
+- Experience (`experience.html`): Updated DeepNeuro role bullets for agentic/RAG/MLOps focus; revised Key Achievements (Technical/Impact) to multi-domain outcomes.
+- Skills (`skills.html`): JS/TS → Intermediate; added “Agentic & Generative AI” and “Web & API Development”; updated Cloud/MLOps text; simplified learning focus to advanced LLM fine-tuning, MLOps automation, and scalable RAG; added domain summary line.
+- Blog (`blog.html`): Retitled hero and broadened description to applied AI; reduced healthcare emphasis.
+- README: Retitled to “DeepNeuro.dev — Applied AI Systems by Rithwik Swarnkar” and updated overview to reflect agentic systems and cross-domain scope.
+
 

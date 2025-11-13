@@ -38,7 +38,7 @@
   <!-- Skills Content -->
   <main>
     <!-- Programming Languages -->
-    <section class="content-section">
+    <section class="content-section" style="background-color: var(--bg-secondary);">
       <h2>Programming Languages</h2>
       <p style="margin-bottom: 3rem;">Proficiency levels based on project complexity and practical application</p>
       
@@ -75,10 +75,10 @@
       <div class="skill-bar-container">
         <div class="skill-header">
           <span class="skill-name">JavaScript / TypeScript</span>
-          <span class="skill-level">Basic</span>
+          <span class="skill-level">Intermediate</span>
         </div>
         <div class="skill-bar">
-          <div class="skill-progress" style="width: 50%;"></div>
+          <div class="skill-progress" style="width: 70%;"></div>
         </div>
       </div>
 
@@ -89,6 +89,52 @@
         </div>
         <div class="skill-bar">
           <div class="skill-progress" style="width: 65%;"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Agentic & Generative AI -->
+    <section class="content-section">
+      <h2>Agentic & Generative AI</h2>
+      <p style="margin-bottom: 3rem;">Building reasoning systems with orchestration, retrieval, and tool-use</p>
+
+      <div class="skill-bar-container">
+        <div class="skill-header">
+          <span class="skill-name">LangChain</span>
+          <span class="skill-level">Advanced</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 90%;"></div>
+        </div>
+      </div>
+
+      <div class="skill-bar-container">
+        <div class="skill-header">
+          <span class="skill-name">Model Context Protocol (MCP)</span>
+          <span class="skill-level">Intermediate</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 75%;"></div>
+        </div>
+      </div>
+
+      <div class="skill-bar-container">
+        <div class="skill-header">
+          <span class="skill-name">Retrieval-Augmented Generation (RAG)</span>
+          <span class="skill-level">Advanced</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 90%;"></div>
+        </div>
+      </div>
+
+      <div class="skill-bar-container">
+        <div class="skill-header">
+          <span class="skill-name">Prompt Engineering & Multi-Agent Workflows</span>
+          <span class="skill-level">Advanced</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 90%;"></div>
         </div>
       </div>
     </section>
@@ -240,15 +286,6 @@
         </div>
       </div>
 
-      <div class="skill-bar-container">
-        <div class="skill-header">
-          <span class="skill-name">LangChain (LLM Applications)</span>
-          <span class="skill-level">Intermediate</span>
-        </div>
-        <div class="skill-bar">
-          <div class="skill-progress" style="width: 70%;"></div>
-        </div>
-      </div>
 
       <div class="skill-bar-container">
         <div class="skill-header">
@@ -264,7 +301,7 @@
     <!-- Cloud & DevOps -->
     <section class="content-section">
       <h2>Cloud Platforms & MLOps</h2>
-      <p style="margin-bottom: 3rem;">Experience deploying and managing ML models in production</p>
+      <p style="margin-bottom: 3rem;">Docker, Vercel, Render, Google Cloud Run, Firebase Hosting, Cloud Build, and GitHub Actions for CI/CD and serverless deployment.</p>
       
       <div class="skill-bar-container">
         <div class="skill-header">
@@ -330,9 +367,26 @@
     <!-- Domain Expertise -->
     <section class="content-section" style="background-color: var(--bg-secondary);">
       <h2>Domain Expertise</h2>
-      <p style="margin-bottom: 3rem;">Specialized knowledge in healthcare AI and bioinformatics</p>
+      <p style="margin-bottom: 3rem;">Healthcare AI, Bioinformatics, and Scientific Imaging (DICOM). Also: applied NLP, multi-agent reasoning, and intelligent automation systems.</p>
       
       <div class="skills-grid">
+
+        <!-- Web & API Development -->
+        <div class="skill-category">
+          <div class="skill-icon">🌐</div>
+          <h3>Web & API Development</h3>
+          <div class="skill-bar" style="margin-top: 1rem;">
+            <div class="skill-progress" style="width: 80%;"></div>
+          </div>
+          <ul style="text-align: left; margin-top: 1rem; color: var(--text-secondary);">
+            <li>FastAPI, Flask, RESTful APIs</li>
+            <li>Pydantic models & CORS</li>
+            <li>React, Vite, Tailwind CSS, Axios</li>
+            <li>Frontend-backend integration</li>
+          </ul>
+        </div>
+        
+
         <div class="skill-category">
           <div class="skill-icon">🏥</div>
           <h3>Healthcare AI</h3>
@@ -457,30 +511,20 @@
       </div>
     </section>
 
+    <!-- Web & API Development section removed (moved into Domain Expertise) -->
+
     <!-- Continuous Learning -->
     <section class="content-section" style="background-color: var(--bg-secondary);">
       <h2>Continuous Learning</h2>
-      <p>I'm committed to staying current with the latest developments in AI and machine learning. Here's what I'm currently learning:</p>
+      <p>I'm committed to staying current with the latest developments in applied AI systems. Here's what I'm currently learning:</p>
       
       <div class="project-card" style="margin-top: 2rem;">
         <div class="card-content">
           <h3 style="color: var(--primary-color); margin-bottom: 1.5rem;">Currently Exploring</h3>
           <ul>
-            <li>
-              <strong>Large Language Models (LLMs):</strong> Advanced prompt engineering, fine-tuning techniques, and building RAG systems
-            </li>
-            <li>
-              <strong>Reinforcement Learning:</strong> Deep RL algorithms and applications in robotics and game AI
-            </li>
-            <li>
-              <strong>MLOps Best Practices:</strong> Advanced deployment strategies, model monitoring, and A/B testing
-            </li>
-            <li>
-              <strong>Federated Learning:</strong> Privacy-preserving ML for healthcare applications
-            </li>
-            <li>
-              <strong>Explainable AI (XAI):</strong> Techniques for interpretable ML in critical applications
-            </li>
+            <li><strong>Advanced LLM fine-tuning:</strong> efficient adapters, safety, and evals</li>
+            <li><strong>MLOps automation:</strong> CI/CD, model monitoring, and observability</li>
+            <li><strong>Scalable RAG systems:</strong> vector search, chunking, and evaluation</li>
           </ul>
           
           <h3 style="color: var(--primary-color); margin-top: 2rem; margin-bottom: 1.5rem;">Learning Resources I Use</h3>
@@ -517,7 +561,7 @@
     <div class="footer-content">
         <div class="footer-section">
             <h4>Rithwik Swarnkar</h4>
-            <p>AI/ML Developer & Healthcare AI Specialist</p>
+            <p>AI/ML Developer & Applied AI Systems Engineer</p>
         </div>
         <div class="footer-section">
             <h4>Quick Links</h4>
